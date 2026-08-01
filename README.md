@@ -1,94 +1,61 @@
 <div align="center">
 
-# Hi, I'm Liangpu Zhou
+# 周良璞 · Liangpu Zhou
 
-**Materials Science × Statistics × Machine Learning**<br>
-**CCHO Final Bronze Medalist**
+### 材料科学 × 统计学 × 机器学习
 
-Undergraduate at the University of Science and Technology Beijing (USTB), working toward reliable and method-oriented AI for Science.
+北京科技大学本科生 · CCHO 决赛铜牌 · AI for Science
 
-[![GitHub](https://img.shields.io/badge/GitHub-liyu230405-181717?logo=github)](https://github.com/liyu230405)
 [![Email](https://img.shields.io/badge/Email-liyu230405%40gmail.com-EA4335?logo=gmail&logoColor=white)](mailto:liyu230405@gmail.com)
+[![Research](https://img.shields.io/badge/Research-Crystal_Generation-2563EB)](https://github.com/liyu230405/cdvae-crystal-screening)
 
 </div>
 
-## About me
+## 关于我
 
-- Materials Science and Engineering undergraduate (Materials Chemistry track) at **USTB**
-- Pursuing a second degree in **Statistics**
-- Interested in **reliable generative models**, **representation learning**, and **verifiable scientific agents**
-- Bronze medalist in the **37th Chinese Chemistry Olympiad (Final)**
-- Previously worked on chemistry-focused LLM data construction, quality control, and model evaluation at **Zhipu AI**
-- Looking for research collaborations at the intersection of machine learning and materials discovery
+我就读于北京科技大学材料科学与工程专业（材料化学方向），同时修读统计学双学位。我的兴趣是把材料领域的问题转化为可以复现、比较和验证的机器学习研究，当前重点关注晶体生成、材料表示学习、可靠评测与科学智能体。
 
-## Education
+- 🎓 北京科技大学材料科学与工程本科，预计 2028 年毕业
+- 📊 统计学双学位在读
+- 🥉 第 37 届中国化学奥林匹克决赛三等奖（铜牌）
+- 🤖 曾在智谱 AI 参与化学大模型数据构建、质量控制与模型评测
+- 🔬 正在寻找 AI for Science、材料机器学习方向的本科科研与合作机会
 
-**University of Science and Technology Beijing (USTB)** · Beijing, China<br>
-B.Eng. candidate in Materials Science and Engineering, Materials Chemistry track · Sep 2024 - Jun 2028 (expected)<br>
-Second degree in Statistics (in progress)
+## 目前在做
 
-Selected coursework: Probability, Mathematical Statistics, Multivariate Statistical Analysis, Statistical Modeling and Computing, Statistical Learning, Machine Learning, and Operations Research.
+- **晶体生成与可靠评测**：复现并扩展 CDVAE，在 Perov-5、Carbon-24、MP-20 上研究不同 checkpoint 的生成表现，以及“结构有效”与“具有探索价值”之间的差异。
+- **材料计算与筛选**：尝试将几何/化学规则、CHGNet 代理评价和候选排序连接为 DFT 前筛工作流。
+- **计算催化**：围绕二维材料单/双原子位点 CO₂ 电催化还原开展 DFT 建模与数据驱动筛选。
+- **可靠 AI 系统**：关注科学智能体中的任务规划、工具调用、结果验证与失败归因。
 
-## Research interests
+## 精选项目
 
-- Generative modeling for periodic crystal structures
-- Out-of-distribution generalization and evaluation in scientific ML
-- Physics- and uncertainty-aware candidate screening
-- Graph and self-supervised representation learning for materials
-- Scientific agents with verifiable planning, tool use, and failure diagnosis
+| 项目 | 简介 | 技术 |
+| --- | --- | --- |
+| **[CDVAE Crystal Screening](https://github.com/liyu230405/cdvae-crystal-screening)** | 整理 2,442 个生成 CIF，比较 13 个训练 checkpoint，构建 Valid/Unique/Novel/VUN、硬规则与 CHGNet 组成的多层评测和 DFT 前筛流程。 | Python · PyTorch · pymatgen · SMACT · CHGNet |
+| **[MiniTag](https://github.com/liyu230405/minitag)** | DIY BLE 近距离寻物器，包括 SwiftUI iOS App 与 XIAO nRF52840 固件，支持自动连接、RSSI 寻物、响铃和电量显示。 | SwiftUI · CoreBluetooth · BLE |
+| **[拼豆图纸工坊](https://github.com/liyu230405/pingdou-pattern-studio)** | 将图片转换为带网格、编号和颜色用量统计的拼豆图纸；图片在浏览器本地处理，可导出高清 PNG。 | TypeScript · React · Image Processing |
 
-## Featured research
+## 经历
 
-### [CDVAE Crystal Generation Benchmark & DFT Pre-screening](https://github.com/liyu230405/cdvae-crystal-screening)
+- **北京科技大学** · 材料科学与工程（材料化学方向）本科、统计学双学位 · 2024.09 - 2028.06（预计）
+- **智谱 AI** · AI 训练师（大模型数据与评测）· 2025.04 - 2025.12<br>
+  参与化学专业数据、匿名模型评测、GUI Agent 与多模态任务；累计产出 900+ 条、质检 600+ 条数据，完成 200+ 道多模型匿名盲评。
+- **北京质心教育科技有限公司** · 化学竞赛课程辅导教师 · 2025.06 - 至今
 
-A reproducible workflow for deciding which generated crystal structures are worth sending to expensive DFT validation.
+## 荣誉
 
-- Evaluated **2,442 generated CIF structures** across Perov-5, Carbon-24, and MP-20
-- Compared **13 training checkpoints** using parseability, geometry, chemistry, Valid/Unique/Novel/VUN, and distribution-fit metrics
-- Added hard filters and **CHGNet** energy/force proxies before DFT
-- Found that high validity does not necessarily imply useful diversity or novelty, and that longer training does not guarantee better generation
-- Best Perov-5 5k result: **99.22% Valid** and **87.50% Strict VUN**
+- **2023.11** · 第 37 届中国化学奥林匹克（决赛）三等奖（铜牌）
+- **2026.05** · “青创北京”挑战杯新质生产力专项赛三等奖
+- **2026.06** · 北京科技大学首届“大数据杯”材料智能创新大赛三等奖
 
-`Python` `PyTorch` `pymatgen` `SMACT` `CHGNet` `Crystal Generation`
-
-## Selected engineering projects
-
-### [MiniTag](https://github.com/liyu230405/minitag)
-
-A DIY BLE proximity finder with a SwiftUI iOS app and Seeed XIAO nRF52840 firmware. It supports scanning, automatic connection, RSSI-based proximity feedback, buzzer control, and battery reporting.
-
-`SwiftUI` `CoreBluetooth` `BLE` `nRF52840`
-
-### [Pingdou Pattern Studio](https://github.com/liyu230405/pingdou-pattern-studio)
-
-A browser-based pattern generator that converts images into numbered bead grids with color quantization, material counts, and high-resolution PNG export. Image processing stays local in the browser.
-
-`TypeScript` `React` `Image Processing` `GitHub Pages`
-
-## Honors
-
-- **Bronze Medal (Third Prize)**, 37th Chinese Chemistry Olympiad - Final (第37届中国化学奥林匹克决赛), Nov 2023
-- **Third Prize**, "Qingchuang Beijing" Challenge Cup Special Track for New Quality Productive Forces, May 2026<br>
-  *DraftMind: Multimodal Intelligent Analysis Platform for Industrial Drawings*
-- **Third Prize**, 1st USTB "Big Data Cup" Materials Intelligence Innovation Competition, Jun 2026<br>
-  *Generative-AI-assisted Crystal Generation and Property Prediction Platform*
-
-## Current questions
-
-I am especially interested in research questions such as:
-
-1. How should we evaluate crystal generators when validity alone overestimates scientific value?
-2. How can periodic representations generalize across compositions, space groups, and datasets?
-3. How can uncertainty, physical priors, and adaptive computation be combined in a closed-loop discovery system?
-4. How can scientific agents make tool-using trajectories traceable, falsifiable, and recoverable after failure?
-
-## Tools
+## 技术与工具
 
 `Python` · `PyTorch` · `Pandas` · `SQL` · `Git` · `LaTeX` · `pymatgen` · `SMACT` · `CHGNet`
 
-## Contact
+## 联系我
 
-- Email: [liyu230405@gmail.com](mailto:liyu230405@gmail.com)
-- GitHub: [@liyu230405](https://github.com/liyu230405)
+- 邮箱：[liyu230405@gmail.com](mailto:liyu230405@gmail.com)
+- GitHub：[@liyu230405](https://github.com/liyu230405)
 
-> I am open to undergraduate research opportunities and collaborations in AI for Science, materials representation learning, and reliable scientific machine learning.
+> 希望参与以方法创新和严格实验为导向的 AI for Science 研究，也欢迎材料生成、表示学习和科学智能体方向的交流。
