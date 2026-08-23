@@ -2,60 +2,61 @@
 
 # 周良璞 · Liangpu Zhou
 
-### 材料科学 × 统计学 × 机器学习
+### 材料科学 × 机器学习 × AI for Science
 
-北京科技大学本科生 · CCHO 决赛铜牌 · AI for Science
+北京科技大学材料科学与工程本科生 · 化学竞赛决赛铜牌 · 晶体生成与材料筛选
 
 [![Email](https://img.shields.io/badge/Email-liyu230405%40gmail.com-EA4335?logo=gmail&logoColor=white)](mailto:liyu230405@gmail.com)
-[![Research](https://img.shields.io/badge/Research-Crystal_Generation-2563EB)](https://github.com/liyu230405/cdvae-crystal-screening)
+[![Crystal Generation](https://img.shields.io/badge/Research-Crystal_Generation-2563EB)](https://github.com/liyu230405/cdvae-crystal-screening)
 
 </div>
 
-## 关于我
+## About Me
 
-我就读于北京科技大学材料科学与工程专业（材料化学方向），同时修读统计学双学位。我的兴趣是把材料领域的问题转化为可以复现、比较和验证的机器学习研究，当前重点关注晶体生成、材料表示学习、可靠评测与科学智能体。
+I am an undergraduate student in Materials Science and Engineering at the University of Science and Technology Beijing. I build reproducible machine learning workflows for crystal generation, materials screening, and scientific AI.
 
-- 🎓 北京科技大学材料科学与工程本科，预计 2028 年毕业
-- 📊 统计学双学位在读
-- 🥉 第 37 届中国化学奥林匹克决赛三等奖（铜牌）
-- 🤖 曾在智谱 AI 参与化学大模型数据构建、质量控制与模型评测
-- 🔬 正在寻找 AI for Science、材料机器学习方向的本科科研与合作机会
+我的兴趣是把材料领域的问题转化为可以复现、比较和验证的机器学习研究，当前关注晶体生成、材料表示、可靠评测与科学智能体。
 
-## 目前在做
+- 🎓 Materials Science and Engineering, University of Science and Technology Beijing · Expected 2028
+- 🥉 Bronze Medal, 37th Chinese Chemistry Olympiad Final
+- 🤖 Former AI Trainer at Zhipu AI, focusing on chemistry data construction and model evaluation
+- 🔬 Open to undergraduate research and collaboration in materials informatics and AI for Science
 
-- **晶体生成与可靠评测**：复现并扩展 CDVAE，在 Perov-5、Carbon-24、MP-20 上研究不同 checkpoint 的生成表现，以及“结构有效”与“具有探索价值”之间的差异。
-- **材料计算与筛选**：尝试将几何/化学规则、CHGNet 代理评价和候选排序连接为 DFT 前筛工作流。
-- **计算催化**：围绕二维材料单/双原子位点 CO₂ 电催化还原开展 DFT 建模与数据驱动筛选。
-- **可靠 AI 系统**：关注科学智能体中的任务规划、工具调用、结果验证与失败归因。
+## Current Focus
 
-## 精选项目
+- **Crystal generation and evaluation**: Extending CDVAE experiments across Perov-5, Carbon-24, and MP-20.
+- **Materials screening**: Connecting geometry and chemistry rules with CHGNet proxy evaluation and DFT pre-screening.
+- **Computational catalysis**: Exploring 2D materials and single-/dual-atom sites for CO₂ electroreduction.
+- **Reliable scientific AI**: Tool use, result verification, failure analysis, and reproducible scientific workflows.
 
-| 项目 | 简介 | 技术 |
+## Selected Projects
+
+| Project | What it does | Technologies |
 | --- | --- | --- |
-| **[CDVAE Crystal Screening](https://github.com/liyu230405/cdvae-crystal-screening)** | 整理 2,442 个生成 CIF，比较 13 个训练 checkpoint，构建 Valid/Unique/Novel/VUN、硬规则与 CHGNet 组成的多层评测和 DFT 前筛流程。 | Python · PyTorch · pymatgen · SMACT · CHGNet |
-| **[MiniTag](https://github.com/liyu230405/minitag)** | DIY BLE 近距离寻物器，包括 SwiftUI iOS App 与 XIAO nRF52840 固件，支持自动连接、RSSI 寻物、响铃和电量显示。 | SwiftUI · CoreBluetooth · BLE |
-| **[拼豆图纸工坊](https://github.com/liyu230405/pingdou-pattern-studio)** | 将图片转换为带网格、编号和颜色用量统计的拼豆图纸；图片在浏览器本地处理，可导出高清 PNG。 | TypeScript · React · Image Processing |
+| **[CDVAE Crystal Screening](https://github.com/liyu230405/cdvae-crystal-screening)** | Reproducible benchmark for 2,442 generated CIF structures across 13 checkpoints, with validity, uniqueness, novelty, VUN, hard filters, CHGNet proxy evaluation, and DFT pre-screening. | Python · PyTorch · pymatgen · SMACT · CHGNet |
+| **[MiniTag](https://github.com/liyu230405/minitag)** | DIY BLE proximity finder with a SwiftUI iOS app and XIAO nRF52840 firmware. Supports RSSI-based finding, buzzer control, and battery display. | SwiftUI · CoreBluetooth · BLE |
+| **[Perler Bead Pattern Studio](https://github.com/liyu230405/pingdou-pattern-studio)** | Browser-based image-to-pattern tool with grid overlays, color indexing, material counts, and high-resolution PNG export. | TypeScript · React · Image Processing |
 
-## 经历
+## Experience
 
-- **北京科技大学** · 材料科学与工程（材料化学方向）本科、统计学双学位 · 2024.09 - 2028.06（预计）
-- **智谱 AI** · AI 训练师（大模型数据与评测）· 2025.04 - 2025.12<br>
-  参与化学专业数据、匿名模型评测、GUI Agent 与多模态任务；累计产出 900+ 条、质检 600+ 条数据，完成 200+ 道多模型匿名盲评。
-- **北京质心教育科技有限公司** · 化学竞赛课程辅导教师 · 2025.06 - 至今
+- **University of Science and Technology Beijing** · B.Eng. in Materials Science and Engineering · 2024.09–2028.06 (expected)
+- **Zhipu AI** · AI Trainer, chemistry data and model evaluation · 2025.04–2025.12  
+  Created 900+ chemistry-domain data samples, quality-checked 600+ samples, and completed 200+ anonymous multi-model evaluations.
+- **Beijing Zhixin Education** · Chemistry Competition Teaching Assistant · 2025.06–Present
 
-## 荣誉
+## Honors
 
-- **2023.11** · 第 37 届中国化学奥林匹克（决赛）三等奖（铜牌）
-- **2026.05** · “青创北京”挑战杯新质生产力专项赛三等奖
-- **2026.06** · 北京科技大学首届“大数据杯”材料智能创新大赛三等奖
+- **2023.11** · Bronze Medal, 37th Chinese Chemistry Olympiad Final
+- **2026.05** · Third Prize, “Qingchuang Beijing” Challenge Cup
 
-## 技术与工具
+## Tools
 
-`Python` · `PyTorch` · `Pandas` · `SQL` · `Git` · `LaTeX` · `pymatgen` · `SMACT` · `CHGNet`
+Python · PyTorch · Pandas · SQL · Git · LaTeX · pymatgen · SMACT · CHGNet
 
-## 联系我
+## Contact
 
-- 邮箱：[liyu230405@gmail.com](mailto:liyu230405@gmail.com)
-- GitHub：[@liyu230405](https://github.com/liyu230405)
+- Email: [liyu230405@gmail.com](mailto:liyu230405@gmail.com)
+- GitHub: [@liyu230405](https://github.com/liyu230405)
 
-> 希望参与以方法创新和严格实验为导向的 AI for Science 研究，也欢迎材料生成、表示学习和科学智能体方向的交流。
+> I am interested in method-driven, carefully validated research in materials informatics, crystal generation, and scientific AI.
+
